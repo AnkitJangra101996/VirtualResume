@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Resume</title>
+    <!-- Bootstrap 4 links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font awsome 5 Link -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="all.min.css">
+
+    <!-- Font Awsome 4 Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Family Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- Link Css Sheet -->
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="all.css"> -->
+    <!-- Link JS Sheet -->
+    <!-- Jquery cdn -->
+    <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+</head>
+
+<body onload="loadFun()">
+
+    <!-- Preloader -->
+    <div class="mainLoader" id="mainLoader">    
+        <div id="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Scroll Up Button Starts -->
+    <button id="scrollUp" onclick="topFunction()"><i class="fa fa-long-arrow-up"></i></button>
+    <!-- Scroll Up Button Ends -->
+
+    <!-- Header -->
+
+        <!-- Logo -->
+        <header>
+            <div class="header-text">
+                Ankit <span>Jangra</span>
+            <!-- NavBar -->
+            <div class="navbar">
+                <a href="#homeSection">Home</a>
+                <a href="#aboutSection">About</a>
+                <a href="#skillSection">Skills</a>
+                <a href="#servSection">Services</a>
+                <a href="#portSection">Portfolio</a>
+                <a href="#contSection">Contact</a>
+            </div>
+            </div>  
+        </header>
+        
+        <!-- Main Content -->
+        <div class="main-content" id="homeSection"><br>
+            <!-- Home Container -->
+            <section class="home-container">
+                <div class="nameContainer">
+                    <div class="text-1">Hello, My Name Is</div>
+                    <div class="text-2">Ankit Jangra</div>
+                    <div class="text-3">And I'm  <br>
+                        <span class="typing"></span></div> 
+                        <br>     
+                        <a href="#contSection" class="HireMe"><li class="fa fa-briefcase"> Hire Me</li></a>
+                </div>
+                <div class="picContainer">
+                    <img src="ankit-img.png" alt="">
+                    <!-- <img src="Images/circle-1544536_1280.png" alt=""> -->
+                </div>
+                
+                <div class="socialMedia" style="background-color: #1A1A1D;">
+                    <ul class="socialMedia">
+                        <a href="#" style="background-color: #1DA1F2;"> <i class="fa fa-twitter"> </i></a>
+                        <a href="#" style="background-color: #0e76a8 ;"> <i class="fa fa-linkedin-square"> </i></a>
+                        <a href="#" style="background-color: #4267B2;"> <i class="fa fa-facebook"> </i></a>
+                        <a href="#" style="border-bottom: none; background-color: #E60023;"> <i class="fa fa-pinterest-square"> </i></a>
+                    </ul>
+                </div>
+            </section>  
+        </div>
+
+        <!-- About Container -->
+        
+        <section class="aboutContainer" id="aboutSection">
+            <h3> About <span> Me</span></h3>
+            <h5>Who <span> I Am</span></h5>
+            <div class="innerAbout">
+                <div class="aboutPic">
+                    <img src="ankit-img.png" alt="" srcset="">
+                </div>
+                <div class="aboutName">
+                    <div class="aboutText">I'm Ankit And I m <span class="typing2"></span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit debitis, sequi veritatis quam voluptatum atque? Exercitationem quaerat dolor soluta sit nisi vitae ipsum assumenda consequatur doloribus tenetur odit fugiat ab, blanditiis corporis praesentium. Amet alias itaque explicabo cupiditate? Animi laboriosam commodi a voluptatum optio cum, vitae dignissimos inventore possimus expedita.</p>
+                    <a href="Images/ankit(Python).docx" class="aboutDownload" download>Download CV</a>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- Skills Container -->
+        <section class="skillContainer" id="skillSection"> 
+            <h3> My<span>Skills</span></h3>
+            <h5>What <span> I Learn</span></h5>
+            <br>
+            <div class="innerskillContainer">
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="icon-html.png" alt="" srcset="">
+                            </div>
+                            <h4>HTML 5</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, perspiciatis. Mollitia nesciunt cumque repellat iure accusantium ipsum eveniet, molestiae earum.</p>
+                        <a href="#" id="skill-a">Read More</a>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="icon-css.png" alt="" srcset="">
+                            </div>
+                            <h4>CSS 3</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, perspiciatis. Mollitia nesciunt cumque repellat iure accusantium ipsum eveniet, molestiae earum.</p>
+                        <a href="#"  id="skill-a">Read More</a>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="icon_Bootstrap.png" alt="" srcset="">
+                            </div>
+                            <h4>BootStrap</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, perspiciatis. Mollitia nesciunt cumque repellat iure accusantium ipsum eveniet, molestiae earum.</p>
+                        <a href="#"  id="skill-a">Read More</a>
+
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="icon-js.png" alt="" srcset="">
+                            </div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, perspiciatis. Mollitia nesciunt cumque repellat iure accusantium ipsum eveniet, molestiae earum.</p>
+                        <a href="#" id="skill-a">Read More</a>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="icon-wp.png" alt="" srcset="">
+                            </div>
+                            <h4>WordPress</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, perspiciatis. Mollitia nesciunt cumque repellat iure accusantium ipsum eveniet, molestiae earum.</p>
+                        <a href="#"  id="skill-a">Read More</a>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="icon-php.png" alt="" srcset="">
+                            </div>
+                            <h4>PHP</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, perspiciatis. Mollitia nesciunt cumque repellat iure accusantium ipsum eveniet, molestiae earum.</p>
+                        <a href="#"  id="skill-a">Read More</a>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <br>
+        <!-- Services Container -->
+        <section class="servContainer" id="servSection"> 
+            <h3> My<span>Services</span></h3>
+            <h5>What <span> I Provide</span></h5>
+            <div class="innerServContainer">
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fa fa-code"></i>
+                            <div class="text">Web Designing</div><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint odio delectus qui atque voluptatem blanditiis fugiat beatae voluptate modi. Non magni est ipsam doloribus delectus, incidunt vitae sequi quia atque.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fa fa-laptop"></i>
+                            <div class="text">Web Development</div><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint odio delectus qui atque voluptatem blanditiis fugiat beatae voluptate modi. Non magni est ipsam doloribus delectus, incidunt vitae sequi quia atque.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fa fa-deaf"></i>
+                            <div class="text">Logo Designing</div><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint odio delectus qui atque voluptatem blanditiis fugiat beatae voluptate modi. Non magni est ipsam doloribus delectus, incidunt vitae sequi quia atque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="serv-content2">
+                    <div class="card">
+                            <div class="box">
+                            <i class="fa fa-chrome"></i>
+                            <div class="text">SEO Optimazation</div><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat ipsum natus ad, nisi sapiente fugiat at recusandae ullam quidem?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <!-- <i class="fa fa-adversal"></i> -->
+                            <i class="fa fa-adversal"></i>
+                            <div class="text">Advertising</div><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat ipsum natus ad, nisi sapiente fugiat at recusandae ullam quidem?</p>
+                            </div>
+                    </div>
+                        <div class="card">
+                            <div class="box">
+                                <i class="fa fa-database"></i>
+                            <div class="text">DataBase Management</div><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat ipsum natus ad, nisi sapiente fugiat at recusandae ullam quidem?</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- Portfolio's Container -->
+        <section class="portContainer" id="portSection">
+                <h3>Port<span>Folio's</span></h3>
+                <h5>What <span> I Created</span></h5>
+                <br>
+            <div class="innerportContainer">
+               <div class="portCard">
+                   <div class="face front">
+                       <h2>Car Game </h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illum non, laborum nobis minima ipsum odio possimus soluta nemo! Nesciunt eum alias maiores quisquam voluptates optio, quos omnis harum nobis similique odio tempora quis ea debitis officia, in commodi explicabo!</p>
+                   </div>
+                   <div class="face back">
+                       <a href="#">Play Game</a>
+                   </div>
+               </div>
+               <div class="portCard">
+                   <div class="face front">
+                       <h2>My Online Meal</h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illum non, laborum nobis minima ipsum odio possimus soluta nemo! Nesciunt eum alias maiores quisquam voluptates optio, quos omnis harum nobis similique odio tempora quis ea debitis officia, in commodi explicabo!</p>
+                   </div>
+                   <div class="face back">
+                       <a href="#">Visit Site</a>
+                   </div>
+               </div>
+               <div class="portCard">
+                   <div class="face front">
+                       <h2>Illusion Website </h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illum non, laborum nobis minima ipsum odio possimus soluta nemo! Nesciunt eum alias maiores quisquam voluptates optio, quos omnis harum nobis similique odio tempora quis ea debitis officia, in commodi explicabo!</p>
+                   </div>
+                   <div class="face back">
+                       <a href="#">Visit Site</a>
+                   </div>
+               </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- Contact Us Container -->
+        <section class="contContainer" id="contSection"><br>
+            <h3>Contact<span>Me</span> </h3>
+            <h5>What <span>You Want</span></h5>
+            <br>
+            <div class="contactContainer">
+                <div class="innercontContainer">
+                    <div class="innerCont1">
+                        <h2>Contact <span style="color: tomato;"> Info</span></h2>
+                        <div class="phoneNum"><i class="fa fa-phone"></i> Phone Number
+                            <br><span>+91 7011-631-491</span>
+                        </div>
+                        <br>
+                        <div class="emailAdd"><i class="fa fa-envelope-open-o"></i> Email Address
+                            <br><span>Ankitjangra101996@gmail.com</span>
+                        </div>
+                        <br>
+                        <div class="address"><i class="fa fa-map-marker"></i> Our Office
+                            <br><span>XYZ appartment,<br><span> Gurgaon, Haryana</span></span>
+                        </div>
+                    </div>
+                    <div class="innerCont2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.7620514291043!2d77.0112809145562!3d28.486711797417605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19de53c2e13d%3A0xd99df968f55fb18a!2sApna%20Enclave%20Complex%2C%20Kheri%2C%20Ashok%20Vihar%2C%20Sector%203%2C%20Gurugram%2C%20Haryana%20122006!5e0!3m2!1sen!2sin!4v1612248076626!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Main container Ends -->
+
+    <!-- Footer Starts  -->
+    <footer>
+        <div class="footContainer">    
+            <div class="innerFoot1">    
+                <h1>Ankit <span> Jangra</span></h1>
+                <div class="socialFoot">
+                    <ul>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+                <p>&copy; 2019 Created By AnkitJangra.com. </p>
+            </div>
+            <div class="innerFoot2">
+                <h3>Quick <span> Links</span></h3>
+                <div class="quickLinks">
+                    <ol>    
+                        <li>    
+                            <a href="#homeSection"><i class="fa fa-home"></i>Home</a>
+                            <a href="#aboutSection"><i class="fa fa-user-circle-o"></i>About</a>
+                            <a href="#skillSection"><i class="fa fa-wrench"></i>Skills</a>
+                            <a href="#servSection"><i class="fa fa-cogs"></i>Services</a>
+                            <a href="#portSection"><i class="fa fa-image"></i>Portfolio</a>
+                            <a href="#contSection"><i class="fa fa-envelope-open-o"></i>Contact Me</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="innerFoot3">
+                <h2>Our <span> NewsLetter</span></h2>
+                <p>Enter Your Email To Get our news and update.</p>
+                <form action="">
+                    <input type="email" class="newsEmail" placeholder="Enter Your Email">
+                    <input type="submit" class="newsBtn" value="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends  -->
+
+<!-- 
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script> -->
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- circle progress CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <script src="typed.js"></script>
+
+    <script>
+        
+        var typed = new Typed(".typing",{
+            strings : ["Web Developer", "Web Designer","Youtuber", "FreeLancer"],
+            typeSpeed: 200,
+            backSpeed: 100,
+            loop: true
+        });     
+        var typed = new Typed(".typing2",{
+            strings : ["Web Developer", "Web Designer","Youtuber", "FreeLancer"],
+            typeSpeed: 200,
+            backSpeed: 100,
+            loop: true
+        });     
+
+        // Prelaoder
+        var preloader = document.querySelector('#mainLoader');
+        function loadFun() {
+            preloader.style.display = 'none';
+            console.log('prelaoder worked');
+        }
+
+        // Scroll Top Button functioning:-
+
+        mybutton = document.getElementById('scrollUp'); 
+
+        window.onscroll = function (){scrollFunction()};
+
+        function scrollFunction() {
+            if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+                mybutton.style.display = "block";
+            } else{
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            
+        }
+        
+        </script>
+    <!-- <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script> -->
+</body>
+</html>
