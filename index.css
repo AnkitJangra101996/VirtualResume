@@ -1,0 +1,1506 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: visible;
+    background-color: #1A1A1D;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+/* ----- 
+Prelaoder  
+------- */
+.mainLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1A1A1D;
+}
+#loader{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: loaderAnimate 1s ease-in-out infinite;
+}
+
+#loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+
+#loader span:nth-child(1){
+    filter: blur(5px);
+}
+#loader span:nth-child(2){
+    filter: blur(10px);
+}
+#loader span:nth-child(3){
+    filter: blur(25px);
+}
+#loader span:nth-child(4){
+    filter: blur(50px);
+}
+
+#loader::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 80%;
+    background: #1A1A1D;
+}
+
+@keyframes loaderAnimate{
+    0%{
+        transform: rotate(180deg);
+        /* transform: scaleX(1.2); */
+    }
+    50%{
+        /* transform: scaleX(1); */
+        transform: rotate(-180deg);
+
+    }
+    100%{
+        transform: rotate(160deg);
+        /* transform: scaleX(1.2); */
+    }
+}
+
+/* ----- 
+Header Container 
+------- */
+.header-text{
+    /* position: fixed; */
+    padding-left: 20px;
+    padding-top: 14px;
+    letter-spacing: 3px;
+    /* position: relative; */
+    font-size: 3rem;
+    font-family: 'Source Serif Pro';
+    display: inline-block;
+    color: white;
+}
+
+.header-text span{
+    color: tomato;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-family: 'Source Serif Pro';
+    display: inline-block;
+}
+
+/* ----- 
+Navbar Container 
+------- */
+
+.navbar{    
+    position: absolute;
+    background-color: #1A1A1D;
+    /* background-color: white; */
+    /* position: fixed; */
+    display: inline-flex;
+    justify-content: end;
+    left: 46%;
+    top: 2%;
+    margin-bottom: 0;
+    min-height: 0;
+    font-size: 2rem;
+}
+
+.navbar a{
+    /* border-right: 1px solid red; */
+    color: tomato;
+    margin: 15px;
+}
+
+.navbar a:hover{
+    background-color: tomato;
+    color: #1A1A1D;
+    border-radius: 5px;
+    padding: 2px 0px;
+    text-decoration: none;
+}
+.copyright-text{
+    font-size: 2rem;
+    text-indent: 20px;
+}
+/* ----- 
+Main Content Container 
+------- */
+
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background-color:#1A1A1D;   
+    /* background-color:#0B0C10;  */
+    /* position: fixed; */
+    position: relative;
+} 
+
+/* ----- 
+Home Container 
+------- */
+
+.home-container{
+    display: flex;
+    position: relative;
+    
+}
+
+.main-content::before{
+    content: ''; 
+    background-image:url('Images/homeBack1.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    padding-top: 20px;
+    background-size: cover;
+    background-clip: content-box;
+    display: block;
+    position: absolute; 
+    opacity: 0.1; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%; 
+    height: 100vh; 
+    z-index: 0; 
+    /* filter: blur(2px); */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+    
+}
+
+
+.nameContainer{
+    /* display: flex; */
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin-top: 12%;
+    /* margin-right: 50%; */
+    /* font-size: 4rem; */
+    font-family: 'Concert One', cursive;
+    color: white;
+    
+}
+.nameContainer .text-1{
+    font-size: 3rem;
+    /* text-align: left; */
+    
+}
+.nameContainer .text-2{
+    font-size: 6rem;
+    color: tomato;
+}
+.nameContainer .text-3{
+    font-size: 3rem;
+    
+}
+.nameContainer span{
+    font-size: 6rem;
+    color: tomato;
+    font-family: 'Concert One', cursive;
+}
+
+.HireMe{
+    font-size: 3rem;
+    border-radius: 10px;
+    background-color: tomato;
+    color: #1A1A1D;
+    padding: 10px;
+}
+
+.HireMe:hover{
+    color: tomato;
+    background-color: #1A1A1D;
+    text-decoration: none;
+}
+.picContainer{
+    /* background-image: url('/Images/circle-1544536_1280.png'); */
+    /* padding-top: 200px; */
+    background-position:center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 60%;
+    /* margin: auto; */
+    width: 30%;
+    /* border: 1px solid grey; */
+    /* border-radius: 50%; */
+    /* animation: spin 5s ease-in-out infinite; */
+    margin-right: 300px;
+}
+
+.picContainer img{
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    background-position: center;
+    background-size: cover;
+    border-left: 1px solid tomato;
+    border-left-width: thick;
+    border-top-left-radius: 20px;    
+}
+
+.socialMedia{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    /* margin-top: 20px; */
+    margin-bottom: 0;
+    margin: auto;
+    top: 50%;
+}
+
+.socialMedia ul a{
+    font-size: 3.5rem;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.socialMedia ul a:hover{
+    background-color: white;
+    color: white;
+}
+/* ----- 
+About Container 
+------- */
+.aboutContainer{
+    /* border: 2px solid red; */
+    background-color: #1A1A1D;
+    height: 100%;
+    font-family: 'Concert One', cursive;
+    width: 100%;
+    /* display: flex; */
+}
+
+.aboutContainer h3{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: white;
+    text-decoration: underline tomato;
+}
+.aboutContainer h3 span{
+    color: tomato;
+    font-size: 4rem;
+    text-align: center;
+}
+.aboutContainer h5 span{
+    color: tomato;
+    font-size: 2rem;
+    text-align: center;
+}
+.aboutContainer h5{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: overline tomato;
+}
+
+.innerAbout{
+    display: flex;
+    padding-top: 30px;
+}
+.aboutPic{
+    flex-direction: row;
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 50%;
+    padding-left: 200px;
+    padding-bottom: 20px;
+    /* background-image: url('Images/ankit-img.png'); */
+}
+.aboutPic img{
+    box-shadow: 2px 5px 10px tomato;
+    /* border 1px solid tomato; */
+    border: 1px solid tomato;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    height: 50%;
+    width: 60%;
+    /* justify-self: center; */
+    /* padding-left: 220px; */
+    /* margin: auto;     */
+
+}
+.aboutName{
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+.aboutText{
+    font-size: 2.5rem;
+    color:white;
+}
+
+.aboutText span{
+    color: tomato;
+}
+.aboutName p{
+    color:white;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-right: 50px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.aboutDownload{
+    font-size: 3rem;
+    color: #1A1A1D;
+    background-color: tomato;
+    padding: 5px;
+    border-radius: 10px;
+}
+.aboutDownload:hover{
+    text-decoration: none;
+    background-color: #1A1A1D;
+    color: tomato;
+    
+}
+/* ----- 
+Skills Container 
+------- */
+
+.skillContainer{
+    /* display: grid; */
+    place-items: center;
+    /* border: 2px solid red; */
+    height: 100%;
+    font-family: 'Concert One', cursive;
+    width: 100%;
+}
+.skillContainer h3{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline tomato;
+}
+.skillContainer h3 span{
+    color: tomato;
+}
+.skillContainer h5{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: overline tomato;
+
+}
+.skillContainer h5 span{
+    color: tomato;
+}
+/* Inner Skills Container */
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skills-box{
+    /* border: 2px solid gray; */
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 2px 5px 10px tomato;
+    border-radius: 50px;
+}
+
+.skills-box:hover{
+    transform: scale(1.1);
+    /* opacity: 0.1; */
+    /* transform: rotate(360deg); */
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+}
+.skills-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills-img img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-title h4{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: tomato;
+    text-decoration: 1px solid underline;
+}
+
+.skills-box p{
+    font-size: 1.5rem;
+    text-align: left;
+    font-style: italic;
+    color: white;
+}
+.skills-box a{
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid white;
+}
+
+#skill-a{
+    visibility: hidden;
+}
+/* .skills-box a:hover{     
+    font-size: 2rem;
+    text-decoration: none;
+    justify-content: center;
+} */
+/* ----- 
+Servies Container 
+------- */
+
+
+.servContainer{
+    /* display: grid; */
+    place-items: center;
+    /* border: 2px solid red; */
+    height: 100%;
+    font-family: 'Concert One', cursive;
+    width: 100%;
+}
+.servContainer h3{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline tomato;
+}
+.servContainer h3 span{
+    color: tomato;
+}
+.servContainer h5{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: overline tomato;
+
+}
+.servContainer h5 span{
+    color: tomato;
+}
+
+.innerServContainer{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.serv-content{
+    display: flex;
+}
+
+.serv-content2{
+    display: flex;
+
+}
+.card{
+    /* border: 1px solid green; */
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px tomato;
+    border-radius: 50px;
+}
+
+.card:hover{
+    /* transform: skew(5deg, 10deg); */
+    transform: scale(1.15);
+    transition: all 0.1s ease-in-out;
+}
+
+.box i{
+    font-size: 8rem;
+    color: tomato;
+}
+
+.box .text{
+    font-size: 2rem;
+    color: tomato;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.box p{
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: left;
+}
+
+/* ----- 
+Portfolio's Container 
+------- */
+
+.portContainer{
+    /* display: grid; */
+    place-items: center;
+    /* border: 2px solid red; */
+    height: 100%;
+    font-family: 'Concert One', cursive;
+    width: 100%;
+}
+.portContainer h3{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline tomato;
+}
+.portContainer h3 span{
+    color: tomato;
+}
+.portContainer h5{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: overline tomato;
+
+}
+.portContainer h5 span{
+    color: tomato;
+}
+.innerportContainer{
+    /* border: 1px solid yellow; */
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    min-height: 50vh;
+    background: #1A1A1D;
+    /* margin: 10px; */
+}
+
+.portCard{
+    /* width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    background: #111; */
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    margin-right: 40px;
+}
+
+.portCard .face{
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.portCard .face.front{
+    background-color: #111111;
+    color: tomato;
+    box-shadow: 2px 5px 10px tomato;
+}
+.portCard:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.portCard .face.back{
+    background: #111111;
+    color: #1A1A1D;
+    transform: perspective(500px) rotateY(180deg);
+}
+.portCard:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.portCard .face.back a{
+    font-size: 3rem;
+    border: 1px solid tomato;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: tomato;
+    
+}
+
+.portCard .face.back a:hover{
+    border: none;
+    background-color: tomato;
+    color: #1A1A1D;
+}
+.portCard .face h2{
+    transform: perspective(500px) translateZ(50px);
+}
+.portCard .face p{
+    transform: perspective(500px) translateZ(50px);
+    font-size: 1.5rem;
+    padding: 40px;
+}
+
+.portCard .face.back a{
+    transform: perspective(500px) translateZ(50px);
+}
+
+
+/* ----- 
+Contact Container 
+------- */
+
+.contContainer{
+    /* display: grid; */
+    place-items: center;
+    /* border: 2px solid red; */
+    height: 100%;
+    font-family: 'Concert One', cursive;
+    width: 100%;
+    /* margin: 40px 40px; */
+    /* position: relative; */
+    /* display: flex; */
+}
+
+.contContainer h3{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline tomato;
+}
+.contContainer h3 span{
+    color: tomato;
+}
+.contContainer h5{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: overline tomato;
+
+}
+.contContainer h5 span{
+    color: tomato;
+}
+
+.contactContainer{
+/* Body */
+    font-family: "poppins", sans-serif;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #fa1e34; */
+    padding: 10px;
+}
+
+.innercontContainer{
+    /* continer */
+    font-family: 'Concert One', cursive;
+    margin-bottom:20px;
+    background: #1A1A1D;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    /* margin-top: 60px; */
+    /* margin-left: 50px; */
+    box-shadow: 4px 2px 5px 4px tomato;
+    border-radius: 20px;
+}
+
+.innerCont1{
+    height: 80vh;
+    width: 50%;
+    /* border: 2px solid blue; */
+    color: white;
+    padding-left: 20px;
+}
+
+.innerCont1 h2{
+    color: white;
+    font-size: 4rem;
+    padding-left: 20px;
+}
+.innerCont1 i{
+    /* padding: 10px; */
+    background-color: #111111;
+    color: #fff;
+    /* font-size: 1rem; */
+    position: relative;
+    border-radius: 50%;
+    overflow: visible;
+    border: 1px solid #111111;
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px red;
+    text-shadow: 2px 1px 1px tomato;
+}
+
+.phoneNum ,.emailAdd, .address{
+    font-size: 3rem;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+
+.address span, .phoneNum span, .emailAdd span{
+    font-size: 2rem;
+    letter-spacing: 0px;
+    padding-left: 50px;
+    /* border-bottom: 1px solid grey; */
+}
+/* .innerCont1 i::before{
+    content: '';
+    position: absolute;
+    border: 2px solid red;
+    opacity: 1;
+    z-index: -1;
+} */
+.innerCont2{
+    height: 80vh;
+    width: 80%;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+}
+.innerCont2 iframe{
+    border-radius: 20px;
+
+}
+
+/* --------
+    Footer 
+--------- */
+
+.footContainer{
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    /* background-color: #fff; */
+    background-color: #fdfff5;
+    /* border: 1px solid red; */
+}
+
+.innerFoot1{
+    height: 30vh;
+    width: 33%;
+    /* border: 1px solid green; */
+    padding-left: 20px;
+}
+.innerFoot1 h1{
+    font-family: 'Concert One', cursive;
+    /* letter-spacing: 2px; */  
+   /* text-decoration: overline tomato; */
+    color: tomato;
+    font-weight: 900;
+}
+.innerFoot1 h1 span{
+    text-decoration: underline tomato;
+    color: #1A1A1D;
+}
+
+.socialFoot {
+    font-size: 2rem;
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialFoot ul a{
+    color: #1A1A1D;
+    padding: 13px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    border: 1px solid white;
+    margin: 5px;
+}
+.socialFoot ul a:hover{
+    color: white;
+    background-color: #1A1A1D;
+}
+.innerFoot1 p{
+    font-size: 1.5rem;
+    color: #1A1A1D;
+    font-weight: 300;
+    font-family: 'Concert One', cursive;
+    letter-spacing: 2px;
+}
+.innerFoot2{
+    font-family: 'Concert One', cursive;
+    height: 30vh;
+    width: 30%;
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+
+.innerFoot2 h3{
+    padding-left: 85px;
+    color: tomato;
+    /* text-align: center; */
+}
+.innerFoot2 h3 span{
+    color: #1A1A1D;
+    text-decoration: underline tomato;
+}
+
+.quickLinks{
+    font-size: 1.5rem;    
+    /* text-align: center; */
+    padding-left: 100px;
+    margin: auto;
+}
+
+.quickLinks ol li{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+}
+.quickLinks ol li a{
+    color: #1A1A1D;
+    /* color: white; */
+    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
+}
+.quickLinks li a i{
+    /* text-decoration: none; */
+    color: tomato;
+    padding-right: 8px;
+}
+.innerFoot3{
+    height: 30vh;
+    width: 57%;
+    /* border: 1px solid yellow; */
+    padding-left: 50px;
+    font-family: 'Concert One', cursive;
+}
+
+.innerFoot3 h2{
+    font-size: 4rem;
+    color: tomato;
+    /* text-align: center; */
+}
+.innerFoot3 h2 span{
+    color: #1A1A1D;
+    text-decoration: underline tomato;
+}
+
+.innerFoot3 p{
+    font-size: 2rem;
+    padding-left: 20px;
+    text-transform: capitalize;
+    line-height: 43px;
+}
+
+.newsEmail{
+    margin-left: 80px;
+    padding: 9px 10px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    /* font-weight: 700; */
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+    text-align: center;
+}
+
+.newsBtn{
+    /* margin-left: 20px; */
+    padding: 9px 10px;
+    font-size: 16px;
+    color: #293043;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*  ------- 
+    Scroll Up Button
+--------*/
+
+#scrollUp{
+    font-size: 4rem;
+    padding: 0px 15px;
+    border: none;
+    border-radius: 20%;
+    /* float: right; */
+    position: fixed;
+    z-index: 99;
+    right: 10px;
+    bottom: 10px;
+    background: tomato;
+    color: #1A1A1D;
+    transition: fadeBtn linear 2s ease-in-out;
+}
+
+@keyframes fadeBtn{
+    100%{
+        transform: skew(0);
+    }
+    0%{
+        transform: skew(1);
+    }
+}
+
+
+#scrollUp:hover{
+    color: tomato;
+    background-color: #1A1A1D;
+
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body{
+        width: 425px;
+        height: 100vh;
+    }
+    .header-text{
+        text-align: center;
+        position: relative;
+        padding-left: 0px;
+    }
+
+    .navbar{
+        position: relative;
+        text-align: center;
+        left: 0;
+    }
+    .main-content::before{
+        width: 162%;
+        height: 134vh;
+    }
+    .home-container{
+        height: 121vh;
+        width: 162%;
+    }
+    #particle-js{
+        width: 159vw;
+    }
+    .picContainer{
+        margin-right: 0;
+        height: 100%;
+    }
+
+    .nameContainer{
+        width: 62%;
+        margin-top: 2%;
+    }
+    .socialMedia{
+        margin: 0;
+        right: 20px;
+        height: 82vh;
+    }
+    .aboutContainer{
+        width: 162%;
+        height: 175%;
+        margin-top: 136px;
+    }
+    .aboutPic{
+        padding-left: 14px;
+        padding-top: 69px;
+        width: 380px;
+    }
+    .aboutName{
+        width: 70%;
+    }
+    .aboutPic p{
+        padding-right: 0px;
+    }
+    .skillContainer{
+        width: 162%;
+        height: 249%;
+        margin-top: 25px;
+    }
+    .skills-container{
+        padding: 0;
+
+    }
+
+    .servContainer{
+        width: 162%;
+        height: 286%;
+        margin-top: 25px;   
+    }
+    .skills-box{
+        padding: 14px;
+        margin: 0px 10px;
+    }
+    .portContainer{
+        width: 160%;
+        height: 175%;
+        margin-top: 25px;
+    }
+    .innerServContainer{
+        padding: 0px;
+    }
+    .portCard{
+        height: 540px;
+        margin-right: 10px;
+    }
+    .portCard .face h2 {
+        font-size: 19px;
+        margin: 0px;
+    }
+    .portCard .face p{
+        font-size: 13px;
+    }
+    .portCard .face{
+        height: 75%;
+    }
+    .contContainer{
+        
+        width: 160%;
+        height: 175%;
+        margin-top: -90px;
+    }
+    .innercontContainer{
+        width: 100%;
+        height: 115vh;
+    }
+    .innerCont2{
+        height: 100vh;
+        padding-top: 44px;
+        
+    } 
+    .phoneNum, .emailAdd, .address{
+        font-size: 16px;
+        padding-top: 0px;
+    }
+    .innerCont1 i{
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+    }
+    .footContainer{   
+        width: 689px;
+        height: 271px;
+    }
+    .innerFoot1{
+        padding-left: 5px;
+
+    }
+    .socialFoot ul a{
+        margin: 0;
+        padding: 0;
+    }
+
+    .innerFoot2 h3{
+        padding-left: 20px;
+    }
+    .quickLinks{
+        padding-left: 30px;
+
+    }
+    .newsEmail{
+        margin: 0;
+    }
+    .innerFoot3{
+        padding-left: 20px;
+        width: 79%;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 600px) {
+    .home-container{
+        height: 120%;
+        width: 158%;
+        padding-top: 22px;
+    }
+    .main-content::before{
+        width: 164%;
+        height: 150vh;
+    }
+    .picContainer {
+        height: 113%;
+        width: 28%;
+        margin-right: 154px;
+    }
+    .socialMedia{
+        height: 89%;
+        margin: 0;
+        padding-top: 40px;
+    }
+    .nameContainer{
+        margin-top: 7%;
+    }
+    .aboutContainer{
+        height: 120%;
+        width: 158%;
+        padding-top: 152px;
+    }
+    .aboutPic {
+        padding-top: 20px;
+        padding-left: 148px;
+    }
+    .portCard {
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+    .skillContainer, .servContainer, .portContainer, .contContainer{
+        height: 120%;
+        width: 158%;
+        /* padding-top: 152px; */
+    }
+    .innercontContainer{
+        width: 96%;
+        height: 112%;
+        margin-bottom: 0px;
+    }
+    .innerCont1{
+        width: 78%;
+    }
+    .phoneNum, .emailAdd, .address{
+        font-size: 2rem;
+    }
+    .innerCont1 i{
+        height: 32px;
+        width: 32px;
+        font-size: 2rem;
+    }
+    .contactContainer{
+        height: 350px;
+        line-height: 24px;
+        padding-top: 20px;
+    }
+    .innerCont2{
+        height: 100%;
+        width: 110%;
+    }
+    
+    .footContainer{   
+        width: 951px;
+        height: 262px;
+        margin-top: 42px;
+    }
+    .innerFoot1{
+        width: 27%;
+    }
+    .socialFoot ul a{
+        padding: 0;
+    }
+    #particle-js{
+        width: 159vw;
+    }
+}
+@media only screen and (min-device-width : 601px) and (max-device-width : 768px) {
+
+    .main-content::before{
+        width: 164%;
+        height: 197vh;
+    }
+    .main-content{    
+        width: 128%;
+        height: 132vh;
+    }
+    .home-container{
+        height: 120%;
+        width: 164%;
+        /* padding-top: 187px; */
+    }
+    .navbar{
+        left: 112%;
+    }
+    .picContainer {
+        height: 113%;
+        width: 28%;
+        margin-right: 224px;
+    }
+    .socialMedia{
+        height: 67%;
+        margin: 0;
+        padding-top: 40px;
+    }
+    .nameContainer{
+        margin-top: 7%;
+    }
+    .aboutContainer{
+        height: 120%;
+        width: 200%;
+        padding-top: 202px;
+    }
+    .aboutPic {
+        padding-top: 20px;
+        padding-left: 148px;
+    }
+    .portCard {
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+    .skillContainer, .servContainer, .portContainer, .contContainer{
+        height: 120%;
+        width: 209%;
+        /* padding-top: 152px; */
+    }
+    .innercontContainer{
+        width: 96%;
+        height: 112%;
+        margin-bottom: 0px;
+    }
+    .innerCont1{
+        width: 78%;
+    }
+    .phoneNum, .emailAdd, .address{
+        font-size: 2rem;
+    }
+    .innerCont1 i{
+        height: 32px;
+        width: 32px;
+        font-size: 2rem;
+    }
+    .contactContainer{
+        height: 350px;
+        line-height: 24px;
+        padding-top: 20px;
+    }
+    .innerCont2{
+        height: 100%;
+        width: 110%;
+    }
+    
+    .footContainer{   
+        width: 1612px;
+        height: 237px;
+        margin-top: 42px;
+    }
+    .innerFoot1{
+        width: 27%;
+    }
+    .socialFoot ul a{
+        padding: 10;
+    }
+}
+@media only screen and (min-device-width : 769px) and (max-device-width : 990px) {
+    .main-content::before{
+        width: 208%;
+        height: 150vh;
+    }
+    .home-container{
+        height: 120%;
+        width: 209%;
+        padding-top: 22px;
+    }
+    .navbar{
+        left: 114%;
+    }
+    .picContainer {
+        height: 113%;
+        width: 28%;
+        margin-right: 224px;
+    }
+    .socialMedia{
+        height: 89%;
+        margin: 0;
+        padding-top: 40px;
+    }
+    .nameContainer{
+        margin-top: 7%;
+    }
+    .aboutContainer{
+        height: 120%;
+        width: 208%;
+        padding-top: 242px;
+    }
+    .aboutPic {
+        padding-top: 20px;
+        padding-left: 148px;
+    }
+    .portCard {
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+    .skillContainer, .servContainer, .portContainer, .contContainer{
+        height: 120%;
+        width: 208%;
+        /* padding-top: 242px; */
+    }
+    .innercontContainer{
+        width: 96%;
+        height: 112%;
+        margin-bottom: 0px;
+    }
+    .innerCont1{
+        width: 78%;
+    }
+    .phoneNum, .emailAdd, .address{
+        font-size: 2rem;
+    }
+    .innerCont1 i{
+        height: 32px;
+        width: 32px;
+        font-size: 2rem;
+    }
+    .contactContainer{
+        height: 350px;
+        line-height: 24px;
+        padding-top: 20px;
+    }
+    .innerCont2{
+        height: 100%;
+        width: 110%;
+    }
+    
+    .footContainer{   
+        width: 209%;
+        height: 237px;
+        margin-top: 42px;
+    }
+    .innerFoot1{
+        width: 27%;
+    }
+    .socialFoot ul a{
+        padding: 10;
+    }
+}
+@media only screen and (min-device-width : 990px) and (max-device-width:1200px){
+    .main-content::before{
+        width: 158%;
+        height: 153vh;
+    }
+    .home-container{
+        height: 120%;
+        width: 158%;
+        /* padding-top: 22px; */
+    }
+    .navbar{
+        left: 88%;
+    }
+    .picContainer {
+        height: 113%;
+        width: 28%;
+        margin-right: 289px;
+    }
+    .socialMedia{
+        height: 89%;
+        margin: 0;
+        padding-top: 40px;
+    }
+    .nameContainer{
+        margin-top: 7%;
+        width: 53%;
+    }
+    .aboutContainer{
+        height: 120%;
+        width: 158%;
+        padding-top: 182px;
+    }
+    .aboutPic {
+        padding-top: 20px;
+        padding-left: 148px;
+    }
+    .portCard {
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+    .skillContainer, .servContainer, .portContainer, .contContainer{
+        height: 120%;
+        width: 158%;
+        /* padding-top: 152px; */
+    }
+    .innercontContainer{
+        width: 96%;
+        height: 112%;
+        margin-bottom: 0px;
+    }
+    .innerCont1{
+        width: 78%;
+    }
+    .phoneNum, .emailAdd, .address{
+        font-size: 2rem;
+    }
+    .innerCont1 i{
+        height: 32px;
+        width: 32px;
+        font-size: 2rem;
+    }
+    .contactContainer{
+        height: 350px;
+        line-height: 24px;
+        padding-top: 20px;
+    }
+    .innerCont2{
+        height: 100%;
+        width: 110%;
+    }
+    
+    .footContainer{   
+        width: 158%;
+        height: 237px;
+        margin-top: 42px;
+    }
+    .innerFoot1{
+        width: 27%;
+    }
+    .socialFoot ul a{
+        padding: 10;
+    }
+}
